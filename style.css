@@ -1,21 +1,497 @@
 *{
     padding: 0;
     margin: 0;
-    border: 0.5px solid rgba(0, 0, 0, 0.289);
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(86, 37, 37);
+}
+
+main {
+    margin-top: 64px;
+    position: relative;
+}
+
+h1 {
+    font-size: 6vmin;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 5vmin;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 4vmin;
+    font-weight: 600;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+}
+
+.mini-image,
+.media-container img,
+.course {
+    box-shadow: 3px 3px 20px 5px;
+} 
+
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+header {
+    top: 0;
+    width: 100%;
+    height: 64px;
+    background-color: white;
+    position: fixed;
+    opacity: 0.8;
+    overflow: hidden;
+    z-index: 1;
 }
 
 .mobile {
     display: none;
 }
 
+.desktop {
+    width: auto;
+    height: 100%;
+    align-items: center;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
 .left {
+    position: relative;
     float: left;
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    height: 32px;
+    line-height: 64px;
+    font-size: 20px;
+    margin-left: 24px;
+}
+
+header span {
+    color: gray;
+}
+
+header a {
+    color: black;
+    text-decoration: none;
+}
+
+.left img {
+    width: 64px;
+    height: 64px;
 }
 
 .right {
     float: right;
+    line-height: 64px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 24px;
 }
 
-header {
-    height: 64px;
+ul {
+    display: flex;
+}
+
+li {
+    list-style: none;
+    margin-left: 16px;
+}
+
+
+
+
+/* /////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////// */
+
+#banner {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background-color: rgb(221, 212, 197);
+    padding: 32px 0px;
+}
+
+#banner h1,h3,button {
+    margin: 16px 0;
+}
+
+.media-container {
+    width: 60%;
+    margin: 0px 24px 0px 24px ;
+}
+
+.side-container {
+    width: 40%;
+}
+
+
+
+button {
+    width: 80%;
+    padding: 8px 0;
+    margin-bottom: 24px;
+    background-color: rgb(132, 54, 40);
+    border: none;
+    color: white;
+}
+
+/* /////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////// */
+
+#campus-info {
+    display: flex;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 32px 0px 32px 0px;
+}
+
+#campus-info .mini-image {
+    width: 35%;
+    margin: 16px;
+}
+
+#campus-info .mini-content {
+    width: 65%;
+}
+
+
+#campus-info img {
+    display: block;
+    width: 100%;
+}
+
+#campus-info .mobile {
+    display: none;
+} 
+
+article h3 {
+    font-size: 4vmin;
+    margin-bottom: 24px;
+}
+
+article p {
+    margin-bottom: 8px;
+}
+
+
+
+.content {
+    display: flex;
+    align-items: center;
+}
+
+#campus-info .side-container {
+    width: 40%;
+}
+
+#campus-info h3,p,span {
+    margin-bottom: 8px;
+}
+
+/* /////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////// */
+
+
+#course {
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background: rgb(226, 223, 217);
+      
+}
+
+#course h2 {
+     text-align: center;
+     padding-top: 32px;
+     margin-bottom: 32px;
+}
+
+#course h3 {
+    font-size: 4vmin;
+    margin-bottom: 8px;
+}
+
+#course p {
+    margin-bottom: 8px;
+}
+
+#course .course-container {
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 32px 56px 0px 56px;
+}
+
+#course .course {
+    width: 26%;
+    margin: 0px 16px 32px 16px;
+    background-color: white;
+
+}
+
+#course .mini-content {
+    padding: 16px;
+}
+
+
+/* //////////////////////////////////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+#thesis {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: white
+}
+
+#thesis h2 {
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+#thesis .ddd {
+    justify-content: center;
+    display: flex;
+    width: 100%;
+}
+
+#thesis .media-container {
+    margin-left: 24px;
+}
+    video {
+        width: 100%;
+    }
+
+    #thesis h3 {
+        margin-top: 24px;
+        margin-bottom: 8px;
+    }
+
+    #thesis p {
+        margin-bottom: 32px;
+    }
+
+
+
+#thesis .side-container {
+    width: 40%;
+}
+
+    
+
+    #thesis .mini-image {
+        width: 35%;
+        height: auto;
+    }
+
+        #thesis img {
+            width: 100%;
+        }
+
+    #thesis .mini-content {
+        width: 65%;
+        padding-left: 16px;
+    }
+        
+        #thesis .content {
+            padding: 16px 0px 16px 16px ;
+        }
+
+
+/* //////////////////////////////////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+footer {
+    padding-top: 16px;
+    border-top: 0.5px solid rgb(5, 5, 5);
+}
+
+footer p,a {
+    font-size: 16px;
+    color: gray;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 1050px) {
+
+    h3 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    a {
+        font-size: 12px;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    *{
+        border: 2px solid;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    main {
+        display: block;
+        position: relative;
+    }
+
+
+/* //////////////////////////////////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////////////////////////////////// */
+
+    #banner {
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+
+    .media-container {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    .side-container {
+        width: 100%;
+        padding: 0px 16px;
+        margin: 0;
+        align-items: none;
+        justify-content: none;
+        padding: none;
+        border: 2px solid blue;
+    }
+
+    button {
+        width: 100%;
+        height: 50px;
+        font-size: 1.5rem;
+    }
+    
+    #banner h1 {
+        font-size: 2.5rem;
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+
+    #banner h3 {
+        font-size: 1.5rem;
+        margin-bottom: 32px;
+    }
+
+
+
+
+
+
+/* //////////////////////////////////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////////////////////////////////// */
+
+    #campus-info .media-container {
+        display: none;
+    }
+
+    #campus-info .desktop {
+        display: none;
+    }
+
+    #campus-info .mobile {
+        display: block;
+    }
+
+    #campus-info .side-container {
+        width: 100%;
+    }
+
+        #campus-info .content {
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+
+            #campus-info .mini-image {
+                width: 100%;
+            }
+
+            #campus-info .mini-content {
+                width: 100%;
+                padding: 0px 16px;
+                margin-bottom: 64px;
+            }
+
+            #campus-info h3 {
+                font-size: 1.125rem;
+            }
+
+            
+/* //////////////////////////////////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////////////////////////////////// */
+    
+    
+    #course {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        background: rgb(255, 254, 252);
+        
+    }
+
+    #course .course-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+        #course .course {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            margin-bottom: 8px;
+        }
+
+            #course .course img {
+                display: none;
+            }
+
+            #course .mini-content {
+                padding: 16px;
+                background-color: rgb(209, 210, 202);
+            }
+                .course-p {
+                    display: none;
+                }
+                    
+                
 }
