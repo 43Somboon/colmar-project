@@ -33,6 +33,14 @@ p {
     font-family: 'Poppins', sans-serif;
 }
 
+a {
+    transition: 0.5s;
+}
+
+li a:hover{
+    font-size: 70%;
+}
+
 .mini-image,
 .media-container img,
 .course {
@@ -147,9 +155,15 @@ button {
     width: 80%;
     padding: 8px 0;
     margin-bottom: 24px;
-    background-color: rgb(132, 54, 40);
-    border: none;
+    background-color: rgb(97, 60, 54);
     color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button:hover {
+    background-color: rgb(108, 90, 87);
+    font-size: 1rem;
 }
 
 /* /////////////////////////////////////////////////////////////////////////// */
@@ -157,10 +171,12 @@ button {
 
 #campus-info {
     display: flex;
+    flex-direction: row;
     width: 100%;
     background-color: rgb(255, 255, 255);
     padding: 32px 0px 32px 0px;
 }
+
 
 #campus-info .mini-image {
     width: 35%;
@@ -245,7 +261,12 @@ article p {
     width: 26%;
     margin: 0px 16px 32px 16px;
     background-color: white;
+    transition: 0.5s;
 
+}
+
+#course .course:hover {
+    width: 28%;
 }
 
 #course .mini-content {
