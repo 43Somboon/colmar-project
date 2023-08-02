@@ -1,0 +1,6 @@
+<link rel="icon" href="resources/images/favicon.ico" type="image/x-icon">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+
+font-family: Arial, Helvetica, sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Montserrat', sans-serif;
