@@ -351,12 +351,40 @@ footer p,a {
 
 }
 
+/* /
+/
+/
+/
+/
+/
+/
+/
+/
+/
+//
+/
+/
+/
+/
+/
+/
+//
+/
+/
+/
+/
+/
+//
+/
+
+
+*/
+
+
+
 @media only screen and (max-width: 768px) {
 
-    *{
-        border: 2px solid;
-    }
-
+    
     .desktop {
         display: none;
     }
@@ -364,6 +392,19 @@ footer p,a {
     main {
         display: block;
         position: relative;
+    }
+
+
+
+
+    header .mobile {
+        display: flex;
+        justify-content: space-around;
+        height: 64px;
+    }
+
+    header .mobile img {
+        width: 45px;
     }
 
 
@@ -389,7 +430,6 @@ footer p,a {
         align-items: none;
         justify-content: none;
         padding: none;
-        border: 2px solid blue;
     }
 
     button {
@@ -472,6 +512,7 @@ footer p,a {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-bottom: 32px;
     }
 
         #course .course {
@@ -479,6 +520,7 @@ footer p,a {
             padding: 0;
             margin: 0;
             margin-bottom: 8px;
+            box-shadow: none;
         }
 
             #course .course img {
@@ -488,10 +530,54 @@ footer p,a {
             #course .mini-content {
                 padding: 16px;
                 background-color: rgb(209, 210, 202);
+                font-size: 4rem;
             }
                 .course-p {
                     display: none;
                 }
                     
                 
+
+
+    #thesis .side-container {
+        display: none;
+    }
+
+    #thesis .mobile {
+        display: block;
+    }
+
+    #thesis video {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 24px;
+    }
+    
+    #thesis h2 {
+        margin-top: 32px;
+        margin-bottom: 16px;
+    }
+
+    #thesis .ddd {
+        justify-content: center;
+        align-items: center;
+    }
+
+    #thesis .media-container {
+        display: flex;
+        width: 100%;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #thesis figcaption {
+        display: none;
+        
+    }
+
+    footer .right {
+        display: none;
+    }
 }
